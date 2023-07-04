@@ -1,4 +1,5 @@
 import { Outlet, Link } from 'react-router-dom'
+import Footer from './Footer';
 
 const Template = () => (
   <>
@@ -17,9 +18,7 @@ const Template = () => (
     <section>
       <Outlet />
     </section>
-    <footer>
-      &copy; 2023
-    </footer>
+    <Footer />
   </>
 )
 

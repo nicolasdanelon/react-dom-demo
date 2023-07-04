@@ -6,4 +6,4 @@ import Template from './Template';
 import Test from './Test';
 import WhoWeAre from './WhoWeAre';
 
-export { Template, Home, WhoWeAre, ContactUs, Services, NotFound }
+export { Template, Home, WhoWeAre, ContactUs, Services, NotFound, Test }

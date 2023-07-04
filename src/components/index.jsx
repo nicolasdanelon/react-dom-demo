@@ -5,4 +5,4 @@ import ContactUs from './ContactUs'
 import Services from './Services'
 import NotFound from './NotFound'
 
-export default { Template, Home, WhoWeAre, ContactUs, Services, NotFound }
+export { Template, Home, WhoWeAre, ContactUs, Services, NotFound }

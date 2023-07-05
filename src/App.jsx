@@ -10,6 +10,7 @@ const App = () => (
       <Route path="who-we-are/:name" element={<Screen.WhoWeAre />} />
       <Route path="contact-us" element={<Screen.ContactUs />} />
       <Route path="services" element={<Screen.Services />} />
+      <Route path="test" element={<Screen.Test />} />
       <Route path="*" element={<Screen.NotFound />} />
     </Route>
   </Routes>

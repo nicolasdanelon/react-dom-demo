@@ -1,0 +1,28 @@
+import { createContext } from 'react';
+import useLocalStorage from './useLocalStorage';
+
+const ConfigContext = createContext();
+
+// eslint-disable-next-line 
+const ConfigProvider = ({ children }) => {
+  const [name, setName] = useLocalStorage('name', '');
+  const [email, setEmail] = useLocalStorage('email', '');
+  const [address, setAddress] = useLocalStorage('address', '');
+
+  const value = {
+    name,
+    email,
+    address,
+    setName,
+    setEmail,
+    setAddress,
+  };
+
+  return (
+    <ConfigContext.Provider value={value}>
+      {children}
+    </ConfigContext.Provider>
+  );
+};
+
+export { ConfigContext, ConfigProvider };

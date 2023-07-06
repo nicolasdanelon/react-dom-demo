@@ -2,7 +2,7 @@ import { createContext, useState } from 'react';
 
 const ConfigContext = createContext();
 
-// eslint-disable-next-line 
+// eslint-disable-next-line
 const ConfigProvider = ({ children }) => {
   const [value, setValue] = useState('---');
 
